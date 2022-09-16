@@ -1,0 +1,13 @@
+1- Instalar o terraform.exe e colocar no path do windows.
+2- Instalar o plugin haiashi terraform no vscode.
+3- Após construir os repositórios pode rodar os comandos:
+   - terraform init (baixar os plugins pra teste local)
+   - terraform plan (testa a criação de recursos)
+   - terraform validate (valida os arquivos de configuração)
+   - terraform apply (cria recursos na aws)
+   - terraform destroy
+   - terraform refresh
+   - terraform show (mostra todos os valores de variaveis)
+   - terraform fmt (mostra todos os arquivos tf)
+   - terraform state
+   - terraform workspace (workspace pra trabalhar com vários ambientes)

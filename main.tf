@@ -13,7 +13,7 @@ resource "aws_vpc" "example" {
 }
 
 provider "aws" {
-  alias  = "east" 
+  alias  = "east"
   region = "sa-east-1"
 }
 
@@ -26,7 +26,7 @@ resource "aws_elasticache_cluster" "redis-cluster" {
   parameter_group_name = "default.redis3.2"
   engine_version       = "6.2"
   port                 = 6379
-  
+
 }
 
 resource "aws_elasticache_replication_group" "redis-replica" {
@@ -46,7 +46,7 @@ resource "aws_secretsmanager_secret" "redis-password" {
 }
 
 data "aws_secretsmanager_random_password" "password" {
-  password_length = 128
-  exclude_numbers = true
+  password_length     = 128
+  exclude_numbers     = true
   exclude_punctuation = true
 }
